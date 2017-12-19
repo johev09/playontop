@@ -27,6 +27,22 @@ a {
   display: flex;
   flex-direction: column; }
 
+kbd {
+  margin: 0 0.1em;
+  padding: 0.3em 0.9em;
+  font-family: sans-serif;
+  color: #FFF;
+  text-shadow: 0 1px 0 #FFF;
+  background-color: lightblue;
+  line-height: 1.4;
+  font-size: 0.8em;
+  border-radius: 0.2em;
+  box-shadow: 0 1px 0 rgba(12, 13, 14, 0.2), 0 0 0 2px #FFF inset;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-weight: lighter;
+  letter-spacing: 0.05em; }
+
 html, body {
   font-family: "Open sans", Helvetica, Arial, sans-serif !important;
   font-size: 16px;
@@ -50,15 +66,16 @@ html, body {
     line-height: 1 !important;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); }
     .header .project-name-left {
-      color: cyan; }
+      color: #75F4F4; }
   .header .project-tagline {
     margin-bottom: 0;
     font-size: 1.1rem;
     font-weight: lighter;
     display: inline-block;
-    margin: 0.5em 0; }
+    margin: 0.5em 0;
+    color: gainsboro; }
     .header .project-tagline i {
-      color: cyan;
+      color: #75F4F4;
       font-size: 1.5em;
       vertical-align: middle; }
   .header .btn-wrapper {
@@ -92,7 +109,8 @@ html, body {
       background-color: rgba(255, 255, 255, 0.2);
       border-color: rgba(255, 255, 255, 0.3); }
   .header video {
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    width: 750px; }
 
 .post-content, .post-preview {
   flex: 1; }
@@ -101,24 +119,24 @@ html, body {
   background: #F2CD60; }
 
 .post-content.install {
-  background: #9BC53D; }
+  background: #7DDF64; }
   .post-content.install ol {
     list-style-position: inside; }
     .post-content.install ol li small {
-      padding-left: 1rem;
-      color: darkslategray; }
+      padding-left: 0.5rem;
+      color: green; }
 
 .post-content-inner {
   position: relative;
   padding: 10rem 7rem;
-  color: #363732;
+  color: darkslategray;
   line-height: 2.5rem; }
   .post-content-inner h3 {
     font-size: 2rem;
-    color: rgba(0, 0, 0, 0.2);
+    color: white;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 0.3rem solid rgba(0, 0, 0, 0.2); }
+    border-bottom: 0.3rem solid white; }
   .post-content-inner span.youtube {
     color: white;
     font-weight: bold;
@@ -139,15 +157,19 @@ html, body {
     background-size: cover; }
 
 .video {
-  padding: 6rem;
+  padding: 4rem;
   background: #53D8FB;
   border: 1rem solid white; }
   .video.alt {
     background: #F2CD60; }
-  .video-caption {
-    margin-bottom: 5rem;
+  .video-caption, .video .keyboard-shortcut {
     font-size: 2.5rem;
-    color: rgba(0, 0, 0, 0.2); }
+    color: rgba(0, 0, 0, 0.3); }
+  .video-caption {
+    margin-bottom: 3rem; }
+  .video .keyboard-shortcut {
+    margin-top: 4rem;
+    color: white; }
   .video-wrapper {
     overflow: hidden;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);

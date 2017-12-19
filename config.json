@@ -24,6 +24,6 @@
   "paginator": {
     "perPage": 3
   },
-  "baseUrl": "/playontop",
+  "baseUrl": "/",
   "output": "./docs"
 }

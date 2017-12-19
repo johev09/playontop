@@ -10,14 +10,14 @@
       <div class="btn-wrapper">
             <a href="{{ site.download.chromeExtension }}" class="btn">
                 <span class="btn-icon"><i class="fa fa-chrome"></i></span>
-                <span class="btn-text">Download for Chrome Extension</a>
+                <span class="btn-text">Download Chrome Extension</a>
             </a>
             <a href="{{ site.download.windows }}" class="btn">
                 <span class="btn-icon"><i class="fa fa-windows"></i></span>
-                <span class="btn-text">Download for Windows</a>
+                <span class="btn-text">Download Windows App</a>
             </a>
       </div>
-      <video width="850" height="480" autoplay loop muted>
+      <video autoplay loop muted>
         <source src="vids/landing-clip.mp4" type="video/mp4"/>
           Your browser does not support the video tag.
       </video>
@@ -43,7 +43,7 @@
 </div>
 {% endmacro %}
 
-{% macro video(title, url, class='') %}
+{% macro video(title, url, class='', shortcut='') %}
 <div class="video flex-col flex-all-center {{ class }}">
     <h3 class="video-caption">{{ title }}</h3>
     <div class="video-wrapper">
@@ -52,6 +52,7 @@
                 Your browser does not support the video tag.
         </video>
     </div>
+    <h3 class="keyboard-shortcut">{{ shortcut }}</h3>
 </div>
 {% endmacro %}
 
@@ -60,7 +61,7 @@
     {{ postPreview('what', 'vids/clip1.mp4') }}
     {{ postContentTop('what', "What's this?") }}
     <p>
-        It's a desktop app, which lets you pop-out <span class="youtube">Youtube</span> videos and keep it on top of everything. So now instead of missing any scene or stopping your work to watch video, you can carry on with your work while watching your videos.
+        It's a desktop app, which lets you pop-out <span class="youtube">Youtube</span> videos and keep it alwas on top of all other windows. So now instead of missing any scene or stopping your work to watch a video, you can carry on with your work while watching your videos.
     </p>
     {{ postContentBottom()}}
 </div>
@@ -69,7 +70,7 @@
         <ol>
             <li>
                 Install <a href="{{ site.download.windows }}">Windows Desktop App</a><br>
-                <small>Allow permission to firewall (when asked) to allow extension to work</small>
+                <small>[ Allow permission to firewall (when asked) to allow extension to work ]</small>
             </li>
             <li>Install <a href="{{ site.download.chromeExtension }}">Chrome Extension</a></li>
             <li>That's All Folks! 😃</li>
@@ -77,9 +78,9 @@
     {{ postContentBottom()}}
     {{ postPreview('install', 'vids/clip2.mp4') }}
 </div>
-{{ video('VideoMode: Ctrl + Alt + V', 'vids/clip2-videomode.mp4') }}
-{{ video('Play/Pause: Ctrl + Alt + Space', 'vids/clip1-play-pause.mp4', 'alt') }}
-{{ video('Toggle Fullscreen: Ctrl + Alt + F', 'vids/clip3-fullscreen.mp4') }}
+{{ video('VideoMode', 'vids/clip2-videomode.mp4' ,'', '<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>V</kbd>') }}
+{{ video('Play/Pause', 'vids/clip1-play-pause.mp4', 'alt', '<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd>') }}
+{{ video('Toggle Fullscreen', 'vids/clip3-fullscreen.mp4', '', '<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd>') }}
 <!-- {{ video('Toggle Maximize: Ctrl + Alt + M', 'vids/clip1.mp4') }} -->
 
 {% endblock %}
