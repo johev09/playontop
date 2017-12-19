@@ -124,7 +124,7 @@ html, body {
     list-style-position: inside; }
     .post-content.install ol li small {
       padding-left: 0.5rem;
-      color: green; }
+      color: black; }
 
 .post-content-inner {
   position: relative;
@@ -138,11 +138,11 @@ html, body {
     padding-bottom: 1rem;
     border-bottom: 0.3rem solid white; }
   .post-content-inner span.youtube {
-    color: white;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background: #cc181e; }
+    color: #cc181e;
+    font-size: 2em;
+    vertical-align: middle; }
+  .post-content-inner i {
+    font-size: 1.5em; }
 
 .post-preview {
   overflow: hidden;
@@ -180,3 +180,19 @@ html, body {
       float: left; }
   .video + .video {
     border-top: 0; }
+
+.footer {
+  color: slategray;
+  font-size: 0.8rem;
+  padding: 1.5em 0;
+  text-align: center;
+  line-height: 2rem;
+  word-spacing: 0.2em; }
+  .footer i {
+    font-size: 1.5em;
+    vertical-align: middle;
+    color: black; }
+    .footer i.fa-facebook-square {
+      color: #3b5998; }
+  .footer a {
+    color: black; }

@@ -184,7 +184,7 @@ html, body {
 
                 li small {
                     padding-left: 0.5rem;
-                    color: green;
+                    color: black;
                 }
             }
         }
@@ -204,11 +204,17 @@ html, body {
             }
 
             span.youtube {
-                color: white;
-                font-weight: bold;
-                padding: 5px 10px;
-                border-radius: 5px;
-                background: #cc181e;
+                color: #cc181e;
+                // font-weight: bold;
+                font-size: 2em;
+                vertical-align: middle;
+                // padding: 5px 10px;
+                // border-radius: 5px;
+                // background: #cc181e;
+            }
+
+            i {
+                font-size: 1.5em;
             }
         }
 
@@ -284,5 +290,31 @@ html, body {
 
     & + .video {
         border-top: 0;
+    }
+}
+
+.footer {
+    // margin-top: 1rem;
+    // background: rgb(240, 240, 240);
+    // box-shadow: 0px -10px 20px rgb(240, 240, 240);
+    color: slategray;
+    font-size: 0.8rem;
+    padding: 1.5em 0;
+    text-align: center;
+    line-height: 2rem;
+    word-spacing: 0.2em;
+
+    i {
+        font-size: 1.5em;
+        vertical-align: middle;
+        color: black;
+
+        &.fa-facebook-square {
+            color: #3b5998;
+        }
+    }
+
+    a {
+        color: black;   
     }
 }
