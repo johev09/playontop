@@ -1,0 +1,30 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "PlayOnTop",
+    "owner": "johev09",
+    "description": "Plays all your videos on top of everything"
+  },
+  "plugins": [
+    "wintersmith-nunjucks",
+    "wintersmith-livereload",
+    "wintersmith-libsass"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "node-sass": {
+    "minify": false
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  },
+  "baseUrl": "/playontop",
+  "output": "./docs"
+}

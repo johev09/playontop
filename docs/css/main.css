@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: inherit; }
+
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+  a:link {
+    color: white; }
+
+.flex-row {
+  display: flex;
+  flex-direction: row; }
+
+.flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.flex-col {
+  display: flex;
+  flex-direction: column; }
+
+html, body {
+  font-family: "Open sans", Helvetica, Arial, sans-serif !important;
+  font-size: 16px;
+  line-height: 1.5;
+  color: gainsboro;
+  background: white; }
+
+.header {
+  background: #24C6DC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #514A9D, #24C6DC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 7em 4em !important;
+  text-align: center;
+  color: white; }
+  .header .project-name {
+    font-size: 3.5em !important;
+    margin-bottom: 3rem !important;
+    line-height: 1 !important;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); }
+    .header .project-name-left {
+      color: cyan; }
+  .header .project-tagline {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    display: inline-block;
+    margin: 0.5em 0; }
+    .header .project-tagline i {
+      color: cyan;
+      font-size: 1.5em;
+      vertical-align: middle; }
+  .header .btn-wrapper {
+    margin: 3.5rem 0; }
+    .header .btn-wrapper .btn {
+      display: inline-block;
+      color: white;
+      background-color: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 0.3rem;
+      transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+      padding: 0.75rem 1rem; }
+      .header .btn-wrapper .btn img {
+        transform: translateY(5px);
+        margin-right: 5px;
+        height: 20px;
+        width: 20px; }
+      .header .btn-wrapper .btn-icon, .header .btn-wrapper .btn-text {
+        vertical-align: middle; }
+      .header .btn-wrapper .btn-icon {
+        font-size: 1.5em;
+        margin-right: 0.5rem;
+        color: rgba(255, 255, 255, 0.65); }
+      .header .btn-wrapper .btn + .btn {
+        margin-left: 2rem; }
+    .header .btn-wrapper .btn:hover {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.3); }
+  .header video {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); }
+
+.post-content, .post-preview {
+  flex: 1; }
+
+.post-content.what {
+  background: #F2CD60; }
+
+.post-content.install {
+  background: #9BC53D; }
+  .post-content.install ol {
+    list-style-position: inside; }
+    .post-content.install ol li small {
+      padding-left: 1rem;
+      color: darkslategray; }
+
+.post-content-inner {
+  position: relative;
+  padding: 10rem 7rem;
+  color: #363732;
+  line-height: 2.5rem; }
+  .post-content-inner h3 {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.3rem solid rgba(0, 0, 0, 0.2); }
+  .post-content-inner span.youtube {
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #cc181e; }
+
+.post-preview {
+  overflow: hidden;
+  background: white; }
+  .post-preview.what {
+    background: url("https://media.giphy.com/media/kaq6GnxDlJaBq/giphy.gif");
+    background-position: center center;
+    background-size: cover; }
+  .post-preview.install {
+    background: url("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif");
+    background-position: center center;
+    background-size: cover; }
+
+.video {
+  padding: 6rem;
+  background: #53D8FB;
+  border: 1rem solid white; }
+  .video.alt {
+    background: #F2CD60; }
+  .video-caption {
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.2); }
+  .video-wrapper {
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    width: 600px; }
+    .video-wrapper video {
+      width: calc(100% + 6px);
+      float: left; }
+  .video + .video {
+    border-top: 0; }

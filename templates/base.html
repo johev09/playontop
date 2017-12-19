@@ -1,0 +1,35 @@
+{%
+    set site = {
+        project: {
+            name: {
+                left: "Play",
+                right: "OnTop"
+            },
+            desc: "<i class='fa fa-play-circle'></i> all your videos on top of everything"
+        },
+        download: {
+            windows: "https://github.com/johev09/desktube/releases/download/v1.0.0/desktube-setup-1.0.0.exe",
+            mac: "",
+            chromeExtension: "https://chrome.google.com/webstore/detail/desktube-chrome-extension/biejfabbjpibepifkhloolobibjjddia"
+        }
+    }
+%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    <div id="content">
+    	{% block content %}
+    	{% endblock %}
+    </div>
+    <!-- <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2008 by <a href="http://domain.invalid/">you</a>.
+        {% endblock %}
+    </div> -->
+</body>
+</html>
