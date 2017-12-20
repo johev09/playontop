@@ -2,6 +2,7 @@
   "dependencies": {
     "typogr": "0.5.x",
     "underscore": "1.4.x",
+    "wintersmith-autoprefixer-sass": "^0.1.0",
     "wintersmith-libsass": "^0.4.1",
     "wintersmith-livereload": "^1.0.0",
     "wintersmith-nunjucks": "^2.0.0"

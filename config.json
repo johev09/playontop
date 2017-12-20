@@ -8,7 +8,8 @@
   "plugins": [
     "wintersmith-nunjucks",
     "wintersmith-livereload",
-    "wintersmith-libsass"
+    "wintersmith-libsass",
+    "wintersmith-autoprefixer-sass"
   ],
   "require": {
     "_": "underscore",
