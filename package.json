@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "node-sass": "^4.7.2",
     "typogr": "0.5.x",
     "underscore": "1.4.x",
     "wintersmith-autoprefixer-sass": "^0.1.0",

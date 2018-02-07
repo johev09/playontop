@@ -167,7 +167,10 @@ html, body {
       list-style-position: inside; }
       .post-content.install ol li small {
         padding-left: 0.5rem;
-        color: black; }
+        font-style: italic;
+        color: crimson;
+        line-height: 1.5rem;
+        display: inline-block; }
   .post-content-inner {
     position: relative;
     padding: 10rem 7rem;
