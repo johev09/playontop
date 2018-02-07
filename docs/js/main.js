@@ -1,5 +1,5 @@
 
-function clicked() {
+function userInteracted() {
     var videos = document.querySelectorAll("video");
     console.log(videos);
     videos.forEach(function (video) {
@@ -7,4 +7,5 @@ function clicked() {
     });
 }
 
-document.body.addEventListener('click', clicked, true);
+document.body.addEventListener('click', userInteracted, true);
+document.body.addEventListener('scroll', userInteracted, true);
