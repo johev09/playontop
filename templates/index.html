@@ -47,7 +47,7 @@
 <div class="video flex-col flex-all-center {{ class }}">
     <h3 class="video-caption">{{ title }}</h3>
     <div class="video-wrapper">
-        <video playsinline autoplay loop muted defaultMuted>
+        <video playsinline autoplay loop muted defaultMuted controls>
             <source src="{{ url }}" type="video/mp4"/>
                 Your browser does not support the video tag.
         </video>
@@ -84,3 +84,5 @@
 <!-- {{ video('Toggle Maximize: Ctrl + Alt + M', 'vids/clip1.mp4') }} -->
 
 {% endblock %}
+
+<script src="js/main.js" />
