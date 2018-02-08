@@ -3,24 +3,26 @@
 {% block content %}
 <section class="header">
   <div class="header-inner">
-      <h1 class="project-name">
-        <span class="project-name-left">{{ site.project.name.left }}</span><span>{{ site.project.name.right }}</span>
-      </h1>
-      <h2 class="project-tagline">{{ site.project.desc }}</h2>
-      <div class="btn-wrapper">
-            <a href="{{ site.download.chromeExtension }}" class="btn" title="Download Chrome Extension">
-                <span class="btn-icon"><i class="fa fa-chrome"></i></span>
-                <span class="btn-text">Download Chrome Extension</a>
-            </a>
-            <a href="{{ site.download.windows }}" class="btn" title="Download for Windows">
-                <span class="btn-icon"><i class="fa fa-windows"></i></span>
-                <span class="btn-text">Download Windows App</a>
-            </a>
-      </div>
-      <video playsinline autoplay loop muted defaultMuted>
-        <source src="vids/landing-clip.mp4" type="video/mp4"/>
-          Your browser does not support the video tag.
-      </video>
+        <h1 class="project-name">
+            <span class="project-name-left">{{ site.project.name.left }}</span><span>{{ site.project.name.right }}</span>
+        </h1>
+        <h2 class="project-tagline">{{ site.project.desc }}</h2>
+        <div class="btn-wrapper">
+                <a href="{{ site.download.chromeExtension }}" class="btn" title="Download Chrome Extension">
+                    <span class="btn-icon"><i class="fa fa-chrome"></i></span>
+                    <span class="btn-text">Download Chrome Extension</a>
+                </a>
+                <a href="{{ site.download.windows }}" class="btn" title="Download for Windows">
+                    <span class="btn-icon"><i class="fa fa-windows"></i></span>
+                    <span class="btn-text">Download Windows App</a>
+                </a>
+        </div>
+        <div class="header-video-wrapper">
+            <video playsinline autoplay loop muted defaultMuted>
+                <source src="vids/landing-clip.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+        </div>
   </div>
 </section>
 

@@ -13,8 +13,29 @@
             }
         }
 
-        video {
-            width: 100%;
+        &-video-wrapper {
+            position: relative;
+            &:after {
+                content: "Tap to play video";
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &.play:after {
+                display: none;
+            }
+
+            video {
+                width: 100%;
+            }
         }
     }
 
@@ -24,6 +45,25 @@
         }
         &-wrapper {
             width: 100vw;
+
+            position: relative;
+            &:after {
+                content: "Tap to play video";
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &.play:after {
+                display: none;
+            }
         }
 
         .keyboard-shortcut {

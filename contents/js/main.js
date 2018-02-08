@@ -1,10 +1,15 @@
 
+var played = false;
 function userInteracted() {
-    console.log("user interacted");
+    if(played) return;
+
+    console.log("playing all videos");
     var videos = document.querySelectorAll("video");
     videos.forEach(function (video) {video.play();
+        video.parentElement.classList.add("play");
         video.play();
     });
+    played = true;
 }
 
 document.body.addEventListener('click', userInteracted, true);
